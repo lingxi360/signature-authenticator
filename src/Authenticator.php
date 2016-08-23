@@ -3,8 +3,8 @@
 namespace Rry\SignatureAuthenticator;
 
 use Exception;
-use Rry\SignatureAuthenticator\Checker\TimestampChecker;
 use Rry\SignatureAuthenticator\Checker\SignatureValueChecker;
+use Rry\SignatureAuthenticator\Checker\TimestampChecker;
 use Rry\SignatureAuthenticator\Contract\AuthenticatorInterface;
 
 class Authenticator implements AuthenticatorInterface
@@ -84,7 +84,7 @@ class Authenticator implements AuthenticatorInterface
     protected function checkApiKeySecret()
     {
         if ($this->api_key === '' || $this->api_secret === '') {
-            throw new Exception("api_key or api_secret must be not null.");
+            throw new Exception('api_key or api_secret must be not null.');
         }
     }
 

@@ -1,7 +1,6 @@
 <?php
 
 use Rry\SignatureAuthenticator\Checker\TimestampChecker;
-use Rry\SignatureAuthenticator\Checker\SignatureKeyChecker;
 
 class TimestampCheckerTest extends PHPUnit_Framework_TestCase
 {
