@@ -1,5 +1,8 @@
 {
     "name": "rry/signature-authenticator",
+    "description": "php 签名验证加密包.",
+    "keywords": ["php", "signature", "authenticator"],
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "Rry\\SignatureAuthenticator\\": "src/"
