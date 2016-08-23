@@ -1,5 +1,10 @@
 # 签名加密验证包
 
+[![Build Status](https://travis-ci.org/RryLee/signature-authenticator.svg?branch=master)](https://travis-ci.org/RryLee/signature-authenticator)
+[![Latest Stable Version](https://poser.pugx.org/rry/signature-authenticator/v/stable)](https://packagist.org/packages/rry/signature-authenticator)
+[![Total Downloads](https://poser.pugx.org/rry/signature-authenticator/downloads)](https://packagist.org/packages/rry/signature-authenticator)
+[![License](https://poser.pugx.org/rry/signature-authenticator/license)](https://packagist.org/packages/rry/signature-authenticator)
+
 ### 安装
 
     composer require rry/signature-authenticator
