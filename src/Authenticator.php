@@ -70,7 +70,7 @@ class Authenticator implements AuthenticatorInterface
     protected function handleAllSignatureParamaters($params)
     {
         $params = collect($params)
-            ->filter(function ($item, $key) {
+            ->filter(function (&$item, $key) {
                 if (! is_array($item)) {
                     $item = (string) $item;
                 }
