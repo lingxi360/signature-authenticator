@@ -48,4 +48,3 @@ $authedData = $authenticator->getAuthParameters($data);
 * 参数名区分大小写；
 * 验证调用返回或微信主动通知签名时，传送的signature参数不参与签名，将生成的签名与该signature参数值作校验。
 * 接口可能会增加字段，验证签名时必须支持增加的扩展字段
-* 数组先做json encode再参与签名
