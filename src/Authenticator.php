@@ -71,6 +71,10 @@ class Authenticator implements AuthenticatorInterface
     {
         $params = collect($params)
             ->filter(function ($item, $key) {
+                if (! is_array($item)) {
+                    $item = (string) $item;
+                }
+
                 return ! in_array($key, ['signature']) && $item !== ''; // 值为空的参数不参与签名
             })
             ->toArray();
