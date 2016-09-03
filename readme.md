@@ -26,12 +26,12 @@ $authedData = $authenticator->getAuthParameters($data);
 ### signature 的验证方式
 签名包含以下三个字段, 首先验证时间戳是否在当前时间 600s 内，其次验证 signature 是否正确，下面是 signature 的验证方式
 
-| 字段名称   |  类型  |  说明  |
-| -- | -- | -- |
-| stamp   |  int  |  发送请求的时间，UNIX时间戳  |
-|  noncestr  |  string  |  随机字符串  |
-|  signature  |  string  |  验证签名  |
-|  api_key  |  string  |  账户识别码  |
+|字段名称|类型|说明|
+|-------|-------|-------|
+|stamp|int|发送请求的时间，UNIX时间戳|
+|noncestr|string|随机字符串|
+|signature|string|验证签名|
+|api_key|string|账户识别码|
 
 ### signature 参数验证步骤如下
 1. 设所有接收到的数据为集合M，将集合M内非空参数值（或空数组）的参数按照参数名ASCII码从小到大排序（字典序），使用URL键值对的格式（即key1=value1&key2=value2…）拼接成字符串stringA。
